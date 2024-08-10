@@ -16,8 +16,7 @@ const Banner1 = () => {
                 Nethmi<span className="icon-heart"></span>Ranula
               </div>
               <div className="text wow fadeInUp" data-wow-delay="600ms">
-                We would love to meet up and chat about how we can <br /> make
-                your dram wedding happen!
+               Our hearts are full as we begin this new chapter with you, <br /> Embracing love, together...
               </div>
             </div>
           </div>
