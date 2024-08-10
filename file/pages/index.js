@@ -9,7 +9,7 @@ import Event1 from "@/components/sections/Event1"
 import Gallery1 from "@/components/sections/Gallery1"
 import GallerySlider1 from "@/components/sections/GallerySlider1"
 import Services1 from "@/components/sections/Services1"
-import Team1 from "@/components/sections/Team1"
+// import Team1 from "@/components/sections/Team1"
 import Testimonial1 from "@/components/sections/Testimonial1"
 export default function Home() {
 
