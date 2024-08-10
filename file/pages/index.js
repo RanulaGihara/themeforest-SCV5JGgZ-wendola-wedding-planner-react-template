@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout"
 import Banner1 from "@/components/sections/Banner1"
 import Countdown1 from "@/components/sections/Countdown1"
 import CallToAction1 from "@/components/sections/CallToAction1"
-import Clients1 from "@/components/sections/Clients1"
+// import Clients1 from "@/components/sections/Clients1"
 import Contact1 from "@/components/sections/Contact1"
 import Couple1 from "@/components/sections/Couple1"
 import Event1 from "@/components/sections/Event1"
@@ -26,7 +26,7 @@ export default function Home() {
     {/* <Team1 /> */}
     <CallToAction1 />
     <Contact1 />
-    <Clients1 />
+    {/* <Clients1 /> */}
     <GallerySlider1 />
     </Layout>
     </>

@@ -2,6 +2,17 @@ import React from 'react';
 import CountDown from '@/components/elements/CountDown';
 
 const Countdown1 = () => {
+
+  // Function to calculate the difference in days
+  const calculateDaysToWedding = () => {
+    const today = new Date();
+    const weddingDate = new Date(2024, 10, 29); // November 29, 2024
+    const timeDiff = weddingDate.getTime() - today.getTime();
+    const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24)); // Convert milliseconds to days
+    return daysDiff;
+  };
+
+  const daysToWedding = calculateDaysToWedding();
   const fixDate = new Date();
   return (
   <>
@@ -20,7 +31,7 @@ const Countdown1 = () => {
         </div>
       </div>
       <div className="time-counter wow fadeInUp">
-        <CountDown endDateTime={fixDate.setDate(fixDate.getDate() + 55)} />
+        <CountDown endDateTime={fixDate.setDate(fixDate.getDate() + daysToWedding)} />
       </div>
     </div>
   </section>

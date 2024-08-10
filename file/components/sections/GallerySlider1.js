@@ -44,7 +44,7 @@ const GallerySlider1 = () => {
 	<>
     <section className="gallery-section-two pt-0">
         <div className="auto-container">
-            <h3 className="title">Follow @domain.com</h3>
+            <h3 className="title">Wander through our love story.</h3>
 			<Swiper {...swiperOptions} className="gallery-carousel owl-carousel owl-theme disable-navs">
 				<SwiperSlide>
 					<div className="gallery-block-two">
