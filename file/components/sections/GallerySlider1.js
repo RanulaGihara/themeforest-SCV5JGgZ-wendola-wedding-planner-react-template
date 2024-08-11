@@ -44,7 +44,7 @@ const GallerySlider1 = () => {
 	<>
     <section className="gallery-section-two pt-0">
         <div className="auto-container">
-            <h3 className="title">Wander through our love story.</h3>
+            <h3 className="title">Wander through our 8 years of love story.</h3>
 			<Swiper {...swiperOptions} className="gallery-carousel owl-carousel owl-theme disable-navs">
 				<SwiperSlide>
 					<div className="gallery-block-two">
@@ -110,7 +110,7 @@ const GallerySlider1 = () => {
 					<div className="gallery-block-two">
 						<div className="inner-box">
 							<div className="image-box">
-								<figure className="image"><Link href="page-gallery"><img src="images/resource/gallery2-1.jpg" alt="Image"/></Link></figure>
+								<figure className="image"><Link href="page-gallery"><img src="images/resource/gallery2-7.jpg" alt="Image"/></Link></figure>
 								<div className="overlay"><Link href="page-gallery" className="icon"><i className="fa fa-expand"></i></Link></div>
 							</div>
 						</div>
