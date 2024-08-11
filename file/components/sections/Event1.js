@@ -20,7 +20,7 @@ const Event1 = () => {
                             <div className="inner-box">
                                 <figure className="image overlay-anim"><Link href="images/resource/event-1.jpg" className="lightbox-image"><img src="images/resource/event-1.jpg" alt="Image"/></Link></figure>
                                 <div className="text">Today, we celebrate the love and commitment of this wonderful couple.</div>
-                                <Link href="page-events" className="theme-btn btn-style-one"><span className="btn-title">View Map</span></Link>
+                                <Link href="https://g.co/kgs/3R1NSPT" className="theme-btn btn-style-one"><span className="btn-title">View Map</span></Link>
                             </div>
                         </div>
 

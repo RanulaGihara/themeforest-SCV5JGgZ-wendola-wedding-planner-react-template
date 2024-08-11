@@ -116,6 +116,16 @@ const GallerySlider1 = () => {
 						</div>
 					</div>
 				</SwiperSlide>
+				<SwiperSlide>
+					<div className="gallery-block-two">
+						<div className="inner-box">
+							<div className="image-box">
+								<figure className="image"><Link href="page-gallery"><img src="images/resource/gallery2-8.jpg" alt="Image"/></Link></figure>
+								<div className="overlay"><Link href="page-gallery" className="icon"><i className="fa fa-expand"></i></Link></div>
+							</div>
+						</div>
+					</div>
+				</SwiperSlide>
 			</Swiper>
         </div>
     </section>
