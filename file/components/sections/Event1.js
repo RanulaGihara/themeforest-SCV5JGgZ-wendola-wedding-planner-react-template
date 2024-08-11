@@ -28,7 +28,7 @@ const Event1 = () => {
                             <div className="inner-box">
                                 <div className="content-box">
                                     <div className="text">From the vibrant flowers and trees to the gently flowing streams, this park provides the perfect backdrop for the joyous occassion. As we stand here today, surrounded by the beauty of this park, we are reminded of the enduring power of the love.</div>
-                                    <div className="event-time"><i className="icon flaticon-alarm"></i> 10:30 am in the quare villa</div>
+                                    <div className="event-time"><i className="icon flaticon-alarm"></i> 9:30 am in the quare villa</div>
                                 </div>
                                 <figure className="image overlay-anim"><Link href="images/resource/event-2.jpg" className="lightbox-image"><img src="images/resource/event-2.jpg" alt="Image"/></Link></figure>
                             </div>
