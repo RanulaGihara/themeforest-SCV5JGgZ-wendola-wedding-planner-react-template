@@ -6,7 +6,7 @@ const Countdown1 = () => {
   // Function to calculate the difference in days
   const calculateDaysToWedding = () => {
     const today = new Date();
-    const weddingDate = new Date(2024, 10, 29); // November 29, 2024
+    const weddingDate = new Date(2024, 10, 29, 9, 30); // November 29, 2024, 9:30 AM
     const timeDiff = weddingDate.getTime() - today.getTime();
     const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24)); // Convert milliseconds to days
     return daysDiff;
@@ -14,7 +14,7 @@ const Countdown1 = () => {
 
   const daysToWedding = calculateDaysToWedding();
   const fixDate = new Date();
-  return (
+  return (  
   <>
   <section className="countdown-section pt-0">
     <div className="auto-container">

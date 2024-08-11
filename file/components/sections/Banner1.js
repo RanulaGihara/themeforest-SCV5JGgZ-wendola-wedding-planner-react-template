@@ -10,7 +10,7 @@ const Banner1 = () => {
           <div className="row">
             <div className="content-box">
               <div className="date wow fadeInUp">
-                December 23, 2023 - — Matara Sri Lanka
+                November 29, 2024 - — Matara Sri Lanka
               </div>
               <div className="name wow fadeInUp" data-wow-delay="300ms">
                 Nethmi<span className="icon-heart"></span>Ranula
