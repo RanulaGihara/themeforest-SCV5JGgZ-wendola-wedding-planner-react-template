@@ -60,7 +60,7 @@ export default function Footer1() {
 		</div>
 		<div className="footer-bottom">
 			<div className="auto-container">
-				<div className="copyright-text">Copyright © Vendola kodesolution . All rights reserved.</div>
+				<div className="copyright-text">Copyright © Ranula Gamage . All rights reserved.</div>
 			</div>
 		</div>
 	</footer>
