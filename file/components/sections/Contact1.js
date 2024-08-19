@@ -6,7 +6,7 @@ const Contact1 = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    number: "",
+    // number: "",
     message: "",
     response: "",
     foodPreference: "",
@@ -36,10 +36,10 @@ const Contact1 = () => {
       setFormData({
         name: "",
         email: "",
-        number: "",
+        // number: "",
         message: "",
         response: "",
-        foodPreference: "vegi", // Reset to default value
+        foodPreference: "vegi",
       });
     } else {
       alert("Failed to submit RSVP");
@@ -119,7 +119,7 @@ const Contact1 = () => {
                         </div>
                       </div>
 
-                      <div className="form-group col-lg-12">
+                      {/* <div className="form-group col-lg-12">
                         <div className="input-outer">
                           <input
                             type="text"
@@ -130,7 +130,7 @@ const Contact1 = () => {
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           />
                         </div>
-                      </div>
+                      </div> */}
 
                       <div className="form-group col-lg-12">
                         <div className="input-outer">

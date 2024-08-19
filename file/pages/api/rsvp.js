@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         data: {
           name,
           email,
-          number: parseInt(number, 10),
+          // number: parseInt(number, 10),
           message,
           response,
           foodPreference
