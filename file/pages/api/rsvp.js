@@ -5,12 +5,12 @@ const prisma = new PrismaClient();
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { name, email, number, message, response } = req.body;
+    const { name, email, message, response ,foodPreference } = req.body;
     console.log(
       "name, email, number, message, response,foodPreference",
       name,
       email,
-      number,
+      // number,
       message,
       response,
       foodPreference

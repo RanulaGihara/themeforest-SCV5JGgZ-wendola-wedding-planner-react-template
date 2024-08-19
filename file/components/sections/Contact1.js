@@ -9,8 +9,10 @@ const Contact1 = () => {
     // number: "",
     message: "",
     response: "",
-    foodPreference: "",
+    foodPreference: "vegi",
   });
+
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,8 +22,27 @@ const Contact1 = () => {
     });
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email address is invalid";
+    }
+    if (!formData.response) newErrors.response = "Response is required";
+    if (!formData.foodPreference) newErrors.foodPreference = "Food preference is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     const res = await fetch("/api/rsvp", {
       method: "POST",
@@ -90,6 +111,8 @@ const Contact1 = () => {
                           </label>
                         </div>
                       </div>
+                      {errors.response && <p className="text-red-500 text-sm">{errors.response}</p>}
+                      
                       <div className="form-group col-lg-12">
                         <div className="input-outer">
                           <input
@@ -100,8 +123,8 @@ const Contact1 = () => {
                             value={formData.name}
                             onChange={handleChange}
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-
                           />
+                          {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
                         </div>
                       </div>
 
@@ -116,21 +139,9 @@ const Contact1 = () => {
                             onChange={handleChange}
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           />
+                          {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                         </div>
                       </div>
-
-                      {/* <div className="form-group col-lg-12">
-                        <div className="input-outer">
-                          <input
-                            type="text"
-                            name="number"
-                            placeholder="Number of Guests"
-                            value={formData.number}
-                            onChange={handleChange}
-                            className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                          />
-                        </div>
-                      </div> */}
 
                       <div className="form-group col-lg-12">
                         <div className="input-outer">
@@ -144,6 +155,7 @@ const Contact1 = () => {
                             <option value="vegi">Vegi</option>
                             <option value="non-vegi">Non-Vegi</option>
                           </select>
+                          {errors.foodPreference && <p className="text-red-500 text-sm">{errors.foodPreference}</p>}
                         </div>
                       </div>
 
