@@ -7,12 +7,13 @@ export default async function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, number, message, response } = req.body;
     console.log(
-      "name, email, number, message, response",
+      "name, email, number, message, response,foodPreference",
       name,
       email,
       number,
       message,
-      response
+      response,
+      foodPreference
     );
     try {
       const newRSVP = await prisma.rSVP.create({
@@ -22,6 +23,7 @@ export default async function handler(req, res) {
           number: parseInt(number, 10),
           message,
           response,
+          foodPreference
         },
       });
       res.status(200).json(newRSVP);

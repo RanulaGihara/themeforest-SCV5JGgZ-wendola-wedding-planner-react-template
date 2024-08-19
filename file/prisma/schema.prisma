@@ -8,11 +8,12 @@ generator client {
 }
 
 model RSVP {
-  id        Int      @id @default(autoincrement())
-  name      String
-  email     String
-  number    Int
-  message   String
-  response  String
-  createdAt DateTime @default(now())
+  id             Int      @id @default(autoincrement())
+  name           String
+  email          String
+  number         Int?
+  message        String?
+  response       String
+  foodPreference String   @default("vegi")  
+  createdAt      DateTime @default(now())
 }
