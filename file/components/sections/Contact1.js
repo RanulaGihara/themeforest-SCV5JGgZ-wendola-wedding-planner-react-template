@@ -9,7 +9,7 @@ const Contact1 = () => {
     number: "",
     message: "",
     response: "",
-    foodPreference: "vegi", // Default value set to "vegi"
+    foodPreference: "",
   });
 
   const handleChange = (e) => {
