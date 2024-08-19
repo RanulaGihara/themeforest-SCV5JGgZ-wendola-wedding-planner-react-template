@@ -118,8 +118,7 @@ const Contact1 = () => {
                           <input
                             type="text"
                             name="name"
-                            placeholder="Complete Name"
-                            required
+                            placeholder="Complete Name"                         
                             value={formData.name}
                             onChange={handleChange}
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -134,7 +133,6 @@ const Contact1 = () => {
                             type="email"
                             name="email"
                             placeholder="Email Address"
-                            required
                             value={formData.email}
                             onChange={handleChange}
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -149,7 +147,6 @@ const Contact1 = () => {
                             name="foodPreference"
                             value={formData.foodPreference}
                             onChange={handleChange}
-                            required
                             className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           >
                             <option value="vegi">Vegi</option>

@@ -31,6 +31,11 @@ License: copyright commercial
 25. Story Section / Two / Three
 26. Main Footer / Two / Three / Four / Five
 **********************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
 @import url("animate.css");
 @import url("linear.css");

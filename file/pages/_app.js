@@ -3,6 +3,7 @@ import "swiper/css/navigation";
 import 'swiper/css/pagination';
 import '../public/css/bootstrap.min.css';
 import '../public/css/style.css';
+// import '../styles/globals.css';
 //import '../public/css/responsive.css';
 
 //import 'swiper/css/effect-coverflow';
